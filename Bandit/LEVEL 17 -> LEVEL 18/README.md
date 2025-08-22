@@ -6,6 +6,8 @@ ls, diff
 
 This was a pretty basic level. I simply used the 'diff' command to print out the lines in passwords.new that weren't in passwords.old:
 
-* diff passwords.old passwords.new
+```bash
+diff passwords.old passwords.new
+```
 
 And we got the password!
