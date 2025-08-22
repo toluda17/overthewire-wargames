@@ -6,10 +6,13 @@ ssh
 
 Unlike our other levels, we're not working to get the password immediately here; instead, we're going to ssh into the local user (our machine) but as bandit 14 instead:
 
-* ssh -i sshkey.private bandit14@bandit.labs.overthewire.org -p 2220
+```bash
+ssh -i sshkey.private bandit14@bandit.labs.overthewire.org -p 2220
+```
 
 After we've connected, we simply read in the file path:
 
-* cat /etc/bandit_pass/bandit14
-
+```bash
+cat /etc/bandit_pass/bandit14
+```
 and get the password!
