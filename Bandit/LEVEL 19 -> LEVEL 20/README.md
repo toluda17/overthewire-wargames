@@ -6,7 +6,9 @@ ls, cat
 
 Linux permissions define read (r), write (w), and execute (x) rights for the owner, group, and others. ls -l shows them as rwxrwxrwx, with - meaning no access. Setuid (s in place of x) lets a file run with its owner’s privilege:
 
-* ./bandit20-do ls /etc/bandit_pass
-* ./bandit20-do cat/etc/bandit_pass/bandit20
+```bash
+./bandit20-do ls /etc/bandit_pass
+./bandit20-do cat/etc/bandit_pass/bandit20
+```
 
 And we obtained the password!
