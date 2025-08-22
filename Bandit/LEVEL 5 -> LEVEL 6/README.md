@@ -10,8 +10,9 @@ ls, cd, find, cat
 
 Because we're looking for a file with multiple properties, I used find with certain parameters:
 
+```bash
 find ./ -type f -size 1033c ! -executable
-
+```
 * ./ : tells us what directory to start our search from
 * -type : type of file we're looking for
 * -size: size of the file (c stands for bytes)
