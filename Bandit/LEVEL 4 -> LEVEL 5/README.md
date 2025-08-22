@@ -6,6 +6,7 @@ ls, cd, file, cat
 
 After listing all files in the directory:
 
+```bash
 * -file00
 * -file01
 * -file02
@@ -16,9 +17,11 @@ After listing all files in the directory:
 * -file07
 * -file08
 * -file09
+```
 
 I originally thought I'd have to cat each and every file but then I remembered about the 'file' command. The 'file' command determines and displays the type of each file I give it. After using file, i was presented with:
 
+```bash
 * ./-file00: data
 * ./-file01: data
 * ./-file02: data
@@ -29,5 +32,6 @@ I originally thought I'd have to cat each and every file but then I remembered a
 * ./-file07: ASCII text
 * ./-file08: data
 * ./-file09: data
+```
 
 As we can see, only file07 contains ASCII text (human readable); from there, it was easy to cat the file and obtain the password.
