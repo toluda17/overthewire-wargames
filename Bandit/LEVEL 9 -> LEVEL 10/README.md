@@ -6,4 +6,6 @@ ls, strings, grep
 
 Because the file was full of binary data, i couldn't simply use cat or find, I had to use the command 'strings', which extracts and prints human-readable text from binary files:
 
+```bash
 strings data.txt | grep =
+```
