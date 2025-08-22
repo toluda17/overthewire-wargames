@@ -10,6 +10,7 @@ OpenSSL is a library for secure communication over networks. It implements the T
 
 As the challenge specifies that SSL encryption is required, I use the OpenSSL client to connect to the localhost server. After sending the current level’s password through the secure connection, the server responds with the password for the following level:
 
-* openssl s_client -connect localhost:30001
-
+```bash
+openssl s_client -connect localhost:30001
+```
 It asks us for the password we previously obtained for access to the new one and once we've put it through, we get the next password!
